@@ -1,4 +1,4 @@
-### ft_printf
+# ft_printf
 Because putnbr and putstr aren’t enough.
 Made for 42sp.
 
@@ -8,10 +8,10 @@ It holds cspdiuxX% conversions, and no flags (maybe a work in progress. probably
 The function comes with a associated Makefile and I heavely use my library, that has it's own Makefile: [libft] (https://github.com/LauraSteinert/libft).
 First, the function parameter starts with a va_list, to get all the possible arguments that a person can pass to the printf function.
 
-# va_list
+### va_list
 va_list is a macro function that is able to hold a undefined number of arguments. It can be initialized with va_start, and ended with va_end. As it is a list of the arguments passed, in order to reach for the next one, you should use va_arg, that acess the next argument. 
 
-# Cases
+### Cases
 The subfunction "cases" will deal with the conversions handled. It will be called after a while that goes until the end of the arguments under "format". Before that, if we have a character that it's not '%', we should place it in the screen and add one to our "length" variable. That can be made using the "ft_putchar_fd" from libft.
 Entering "cases", we will see which character we are dealing with. The first case happens when a person writes something like "%0", and that case is not treated by ft_printf. 
 Then we have the following paths:
