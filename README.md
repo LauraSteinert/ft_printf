@@ -5,7 +5,7 @@ Made for 42sp.
 ## How does it work?
 My version of printf is extremally forward, with no use of structs for types of conversion or length of the printed string/number/everything your heart desires.
 It holds cspdiuxX% conversions, and no flags (maybe a work in progress. probably not.)
-The function comes with a associated Makefile and I heavely use my library, that has it's own Makefile: [libft] (https://github.com/LauraSteinert/libft).
+The function comes with a associated Makefile and I heavely use my library, that has it's own Makefile: [libft](https://github.com/LauraSteinert/libft).
 First, the function parameter starts with a va_list, to get all the possible arguments that a person can pass to the printf function.
 
 ### va_list
